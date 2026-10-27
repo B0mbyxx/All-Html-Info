@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio and Video</title>
+</head>
+    <body>
+        <!--TYPE = aby broser věděl co to je za audio (mp3, wav, mpeg atd...)-->
+
+
+        <!--Bez controls se ti neukáže audio-->
+        <p>Melodie</p>
+        <audio controls>
+            <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/scratching-the-surface.mp3" type="audio/mpeg">
+        </audio>
+
+        <!--Od načtení stránky se ti to spustí samo -->
+        <p>Sus</p>
+        <audio controls autoplay>
+            <source src="sounds/sus.mp3" type="audio/mp3">
+        </audio>
+
+        <!--Můžeš vypinat a zapínat zvuk-->
+        <p>Trump(et)</p>
+        <audio controls muted>
+            <source src="sounds/TRAMPet.mp3" type="audio/mp3">
+        </audio>
+
+        <!--Hraje pořád dokola-->
+        <p>AA</p>
+        <audio controls loop>
+            <source src="sounds/Aa.mp3" type="audio/mp3">
+        </audio>
+
+        <!--Vše dohromady (špatný nápad)-->
+        <p>Fart</p>
+        <audio controls muted loop autoplay>
+            <source src="sounds/Fart.mp3" type="audio/mp3">
+        </audio>
+
+    </body>
+</html>

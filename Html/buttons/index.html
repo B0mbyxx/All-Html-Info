@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+</head>
+    <body>
+
+        <h1>Google</h1>
+
+        <!-- Button muže být i jako odkaz někam -->
+        <a href="https://google.com">
+            <button 
+            style="font-size: 20px; background-color:darkred; color: black; border-radius: 100px;">Klikni na mě</button>
+        </a>
+        
+        <br>
+
+        <h2 id="greeting">Hello</h2>
+        <!-- Pokud použijeme nějaký script tak může funogvat třeba na změnu textu -->
+        <button onclick="idk()" style="font-size: 25px; background-color: grey; color: lightskyblue; border-radius: 25px;">Kouzelný tlačítko</button>
+
+
+
+        <!-- Težký... -->
+        <script>
+            function idk(){
+                document.getElementById("greeting").innerHTML = "Cuuus"
+            }
+        </script>
+
+
+    </body>
+</html>

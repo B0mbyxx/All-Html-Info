@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Inputs</h1>
+
+    <!-- LABEL je to co je před inputem -->
+    <!-- NAME se píše proto, aby server věděl jakou hodnotu zadáváš (nemusí tam být) -->
+    <!-- placeholder je to co vidíme v inputu -->
+
+    <br>
+    <label>Username:</label>
+    <input type="text" name="jmeno" placeholder="Jméno">
+
+    <br>
+    <label>Password:</label>
+    <input type="password" name="heslo" placeholder="Heslo">
+
+    <br>
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="e-mail">
+
+    <br>
+    <label>Vyhledávání:</label>
+    <input type="search" name="hledani" placeholder="vyhledej něco">
+
+    <br>
+    <label>Telefon:</label>
+    <input type="tel" name="telefon" placeholder="telefon">
+
+    <br>
+    <label>Narozeniny:</label>
+    <input type="datetime-local" name="datum_a_cas">
+
+    <br>
+    <label>Quantity:</label>
+    <input type="number" name="vek" placeholder="Věk" min="0" max="100">
+
+    <br>
+    <label>Jsi člověk:</label>
+    <input type="checkbox" name="pohlavi">
+
+    <br>
+    <label for="payment">Zaplatit</label>
+    <select id="payment">
+        <option value="visa">Visky</option>
+        <option value="mastercard">masterka</option>
+        <option value="giftcard">giftkarta</option>
+    </select>
+
+    <br>
+    <br>
+    <label for="comment">Komentář:</label>
+    <textarea type="comment" rows="3" cols="25"> </textarea>
+
+    <!-- SUBMIT a RESET fungují jen když jsou uvnitř <form> -->
+    <br>
+    <input type="submit" name="odeslat" value="Potvrdit">
+
+    <br>
+    <input type="reset" name="reset" value="Resetovat">
+
+    
+</body>
+</html>
